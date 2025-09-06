@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "123ae3c5-600f-419d-bd02-c96c7116b1d9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48224694",
+		"_collection_link": "https://kirittojose-5509076.postman.co/workspace/Curso-ExpressJS~537543fe-c0af-45ac-9838-dbf2e4ec1b68/collection/48224694-123ae3c5-600f-419d-bd02-c96c7116b1d9?action=share&source=collection_link&creator=48224694"
+	},
+	"item": [
+		{
+			"name": "Eviar datos de formulario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Jose",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jose@example.com",
+							"type": "text"
+						},
+						{
+							"key": "tel",
+							"value": "099999999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/from",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"from"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enviar datos JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Jose\",\r\n    \"Apellido\": \"Pereyra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
